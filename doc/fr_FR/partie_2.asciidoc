@@ -7,8 +7,9 @@ Il est composé des balises (une * indique que cette balise est obligatoire) :
 - *id*^(*)^ : identifiant unique du plugin (doit être le même que le nom du dossier contenant le plugin et que le type des équipements que crée le plugin)
 - *name*^(*)^ : nom du plugin (ça sera le nom affiché sur l'interface)
 - *description*  : description du plugin
-- *icon* : classe css utilisée dans la balise <i> pour afficher l'icône du plugin. Doit obligatoirement commencer par "fa" suivi de l'icône voulu, la liste est disponible link:http://fortawesome.github.io/Font-Awesome/[là] licence : Licence sous laquelle est publiée le plugin
-author : Auteur du plugin
+- *icon* : classe css utilisée dans la balise <i> pour afficher l'icône du plugin. Doit obligatoirement commencer par "fa" suivi de l'icône voulu, la liste est disponible link:http://fortawesome.github.io/Font-Awesome/[là] 
+- *licence* : Licence sous laquelle est publiée le plugin
+- *author* : Auteur du plugin
 - *installation* : notice d'installation du plugin si nécessaire
 - *require*^(*)^ : version minimale de Jeedom requise pour installation du plugin
 - *version*^(*)^ : version du plugin
@@ -48,13 +49,13 @@ La première partie commentée contient la licence (c'est mieux :) celle utilis�
 Ensuite vient l'inclusion du core de Jeedom (ça permet d’accéder au fonction interne)
 Et après viennent les 2 fonctions  :
 
-- install_pluginid() : méthode permettant d'installer le plugin
+- pluginid_install() : méthode permettant d'installer le plugin
 Ici l'installation ajoute une tâche cron à Jeedom
 
-- update_pluginid() : méthode permettant d'installer le plugin
+- pluginid_update() : méthode permettant d'installer le plugin
 Utilisé ici pour redémarrer la tache cron
 
-- remove_pluginid() : méthode permettant de supprimer le plugin
+- pluginid_remove() : méthode permettant de supprimer le plugin
 Ici la fonction supprime la tâche cron de Jeedom lors de la désinstallation
 
 Exemple :
@@ -125,7 +126,7 @@ Le fichier est constitué de  :
 - L'inclusion du core de Jeedom
 - La vérification que l'utilisateur est bien connecté (j’inclue le fichier 404 car ce fichier est un fichier de type vue)
 
-Ensuite vient le paramètre demandé (il peut en avoir plusieurs), c'est de la syntaxe standard Bootstrap pour les formulaires seule particularité à respecter c'est la classe ("configKey") à mettre sur l'élément de paramètre ainsi que le "data-l1key" qui indique le nom du paramètre. Pour récupérer la valeur de celui-ci ailleurs dans le plugin il suffit de faire  : "config::byKey(#NOM_PARAMETRE#, #PLUGIN_ID#)"
+Ensuite vient le paramètre demandé (il peut en avoir plusieurs), c'est de la syntaxe standard Bootstrap pour les formulaires seule particularité à respecter c'est la classe *configKey* à mettre sur l'élément de paramètre ainsi que le "data-l1key" qui indique le nom du paramètre. Pour récupérer la valeur de celui-ci ailleurs dans le plugin il suffit de faire  : "config::byKey(#NOM_PARAMETRE#, #PLUGIN_ID#)"
 Exemple :
 
 

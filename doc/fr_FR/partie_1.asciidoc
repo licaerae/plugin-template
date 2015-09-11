@@ -27,6 +27,6 @@ Pour ce qui est de la convention de nommage des fichiers voici les impératifs :
 
 Voici les recommandations :
 
-- les fichiers de type AJAX doivent se finir par _*.ajax.php*_
+- les fichiers de type AJAX doivent se finir par *_.ajax.php_*
 - le nom de la première page de vue d’un plugin doit être le même que l’ID du plugin
 - le nom du fichier JS (s’il y en a un) de la première page de vue du plugin doit être l’ID du plugin

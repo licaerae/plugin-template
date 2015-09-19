@@ -10,7 +10,7 @@ Attention lors de l'utilisation à bien remplacer tous les *template* par l'id d
 include::partie_1.asciidoc[]
 
 '''
-=== Création plugin partie 2 : plugin info
+=== Création plugin partie 2 : plugin_info
 include::partie_2.asciidoc[]
 
 '''

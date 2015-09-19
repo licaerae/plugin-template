@@ -1,4 +1,4 @@
-===== info.xml
+=== info.xml
 
 Fichier de base du plugin, c'est dans celui-ci que Jeedom récupère toutes les informations relatives au plugin :
 
@@ -18,8 +18,7 @@ Il est composé des balises (une * indique que cette balise est obligatoire) :
 - *display* : permet de spécifier le nom du fichier php (qui doit se trouver dans le dossier desktop/php) devant être appeler pour afficher le panel (lien dans le sous-menu accueil)
 - *mobile* : permet de spécifier le nom du fichier html (qui doit se trouver dans le dossier mobile/html) devant etre appeler pour afficher la version mobile du panel
 
-Exemple :
-
+Exemple : +
 
 ----
 <?xml version="1.0" encoding="UTF-8"?>
@@ -40,7 +39,7 @@ Exemple :
 </info>
 ----
 
-===== installation.php
+=== installation.php
 Fichier donnant les instructions d'installation d'un plugin :
 
 Il est composé de la manière suivante :
@@ -117,7 +116,7 @@ function zwave_remove() {
 ----
 
 
-===== configuration.php
+=== configuration.php
 Fichier permettant de demander des informations de configuration à l'utilisateur :
 
 Le fichier est constitué de  :

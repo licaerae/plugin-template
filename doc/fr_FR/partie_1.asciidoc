@@ -1,6 +1,8 @@
+:imagesdir: ../images
+
 [role="text-justify"]
-****
-Voici comment ça se décompose, tout d’abord un dossier du nom de votre plugin (son identifiant unique plus exactement) qui doit contenir les sous-dossiers suivants : +
+----
+image:directories.png[role="left",align="center"] Voici comment ça se décompose, tout d’abord un dossier du nom de votre plugin (son identifiant unique plus exactement) qui doit contenir les sous-dossiers suivants : +
 
 - *3rdparty* : dossier contenant les librairies externes utilisées dans le plugin (exemple pour le plugin SMS une librairie pour la communication série en php)
 - *core* : dossier contenant tous les fichiers de fonctionnement interne
@@ -32,4 +34,4 @@ Voici les recommandations : +
 - les fichiers de type AJAX doivent se finir par *.ajax.php*
 - le nom de la première page de vue d’un plugin doit être le même que l’ID du plugin
 - le nom du fichier JS (s’il y en a un) de la première page de vue du plugin doit être l’ID du plugin
-****
+----
